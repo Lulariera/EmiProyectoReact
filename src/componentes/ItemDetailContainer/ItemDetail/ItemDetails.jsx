@@ -31,14 +31,14 @@ const ItemDetail = ({ item }) => {
 		
 				  <div className="w-full grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:gap-x-8">
 					<div className="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-5">
-					  <img src={item.image} alt={`${item.category}, ${item.name}`} className="object-center object-cover"/>
+					  <img src={item.url} alt={`${item.category}, ${item.name}`} className="object-center object-cover"/>
 					</div>
 					<div className="sm:col-span-8 lg:col-span-7">
 					  <h2 className="text-2xl font-extrabold text-pink-500 sm:pr-12">{item.name}</h2>
 		
 					  <section aria-labelledby="information-heading" className="mt-2">
 						<div className="flex items-center">
-							<a href=" " className="ml-3 text-sm font-medium text-indigo-600 hover:text-indigo-500 mb-3">{item.info}</a>
+							<a href=" " className="ml-3 text-lg font-medium text-indigo-600 hover:text-indigo-500 mb-3">{item.info}</a>
 						  </div>
 						  <p className="text-2xl text-gray-900">${item.price}</p>
 						<div className="mt-6">
@@ -56,7 +56,7 @@ const ItemDetail = ({ item }) => {
 							)}
 							<Link to={`/category/${item.category}`} className=" flex flex-row items-center mt-2">
                             <ArrowLeftIcon className="h-4 w-4 mr-1" />
-                            ver {item.category}
+                            {item.category}
                         </Link>
 					  </section>
 					</div>

@@ -9,7 +9,7 @@ const Item = ({ item }) => {
 
                 <div className="w-auto grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:gap-x-2">
                     <div className="aspect-w-2 aspect-h-3 rounded-lg bg-gray-100 overflow-hidden sm:col-span-4 lg:col-span-4">
-                        <img src={item.image} alt="img" className="object-center object-cover" />
+                        <img src={item.url} alt="img" className="object-center object-cover" />
                     </div>
                     <div className="sm:col-span-8 lg:col-span-6">
                         <h4 className="mt-4 text-xl font-semibold uppercase leading-tight truncate">{item.name}</h4>

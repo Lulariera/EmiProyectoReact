@@ -32,7 +32,7 @@ const CartProvider = ({ children }) => {
     }
 
     // Limpiar el carrito
-    const cleanCart = () => {
+    const clearCart = () => {
         setCartItems([])
     }
 
@@ -67,7 +67,7 @@ const CartProvider = ({ children }) => {
                 cartItems,
                 addItem,
                 removeItem,
-                cleanCart,
+                clearCart,
                 cartLenght,
                 getSubtotal,
                 getTotal

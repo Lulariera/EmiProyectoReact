@@ -1,3 +1,7 @@
+
+.img-hero{
+  background-image: url(../src/assets/hero.jpg);
+}
 .App {
   text-align: center;
 }

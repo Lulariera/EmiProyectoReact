@@ -49,9 +49,6 @@ const ItemCount = ({ qty, addToCart }) => {
                             </span>
                         </div>
                     </div>
-
-                    {/* Stock disponible */}
-                    <p className= " lowercase">¡Últimas unidades!</p>
                 </div>
 
                 {/* Botón agregar al carrito */}

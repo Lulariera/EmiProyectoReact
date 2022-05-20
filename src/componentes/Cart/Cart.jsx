@@ -46,7 +46,7 @@ const Cart = () => {
                                 {cartItems.map((item) => (
                                     <tr key={item.id} className="border-gray-200 border-b">
                                         <th className="flex flex-row justify-left items-center pr-40 md:pr-0">
-                                            <img className="p-4 h-60" src=" " alt={item.name} />
+                                            <img className="p-4 h-60" src={item.url} alt={item.name} />
                                             <div className="flex flex-col text-left">
                                                 <p >{item.name}</p>
                                             </div>
@@ -80,7 +80,7 @@ const Cart = () => {
         <p>Total:</p>
         <p>${getTotal()},00</p>
     </div>
-    {/* <Link to='/checkout' className={(styles.button) + " focus:outline-none text-white bg-gray-700 focus:ring-transparent w-full text-center py-3 mt-3"}>Checkout</Link> */}
+    <Link to='/checkout' className=" focus:outline-none text-white bg-gray-700 focus:ring-transparent w-full text-center py-3 mt-3">Checkout</Link>
     <Link to='/' className=" flex flex-row items-center mt-2">
         <ArrowLeftIcon className="h-4 w-4 mr-1" />
         seguir comprando

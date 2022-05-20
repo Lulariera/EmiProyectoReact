@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 import CartWidget from "../NavBar/CartWidget/CartWidget"
-import Epifania from '../../assets/Epifania.png'
+import Logo from '../../assets/Logo.png'
 
 
 const NavBar = () => {
@@ -39,14 +39,17 @@ const NavBar = () => {
 							<li>
 								<Link to="/category/tortas">TORTAS</Link>
 							</li>
+							<li>
+					<CartWidget />
+							</li>
 						</ul>
 					</div>
 					<Link to="/"className="flex-1"><font></font>
-     <img src={Epifania} alt='logo' className='w-24'></img>
+     <img src={Logo} alt='logo' className='w-32 '></img>
 
 					</Link>
 				</div>
-				<div className="navbar-center hidden lg:flex">
+				<div className="navbar-end hidden lg:flex my-3">
 					<ul className="menu menu-horizontal p-0">
 						<li>
 							<Link to="/category/tartas">TARTAS</Link>
@@ -57,10 +60,12 @@ const NavBar = () => {
 						<li>
 								<Link to="/category/tortas">TORTAS</Link>
 							</li>
-					</ul>
-				</div>
-				<div className="navbar-end">
+							<li>
+							<div className="navbar-end">
 					<CartWidget />
+				</div>
+							</li>
+					</ul>
 				</div>
 			</div>
 		</>

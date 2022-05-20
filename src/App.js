@@ -5,6 +5,7 @@ import ItemListContainer from './componentes/ItemListContainer/ItemListContainer
 import NavBar from './componentes/NavBar/NavBar';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer'
 import Cart from './componentes/Cart/Cart';
+import Hero from './componentes/Hero/Hero';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <BrowserRouter>
                  <NavBar />
                 <Routes>
-                    <Route path='/' element={<ItemListContainer />} />
+                    <Route path='/' element={<Hero/>} />
                     <Route path='category/:categoryId' element={<ItemListContainer />} />
                     <Route path='/cart' element={<Cart />} />
                     <Route path='item/:itemId' element={<ItemDetailContainer/>}/>

@@ -4,7 +4,7 @@ import "firebase/compat/storage";
 
 const Item = ({ item }) => {
     return (
-        <div className="flex-col text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:flex-row bg-pink-300">
+        <div className="flex-col text-base text-left transform transition w-full md:inline-block md:max-w-2xl md:px-4 md:my-8 md:align-middle lg:flex-row ">
             <div className="w-full relative flex  bg-white px-6 pt-14 pb-8 overflow-hidden shadow-2xl sm:px-8 sm:pt-8 md:p-4 lg:p-6">
 
                 <div className="w-auto grid grid-cols-1 gap-y-8 gap-x-6 items-start sm:grid-cols-12 lg:gap-x-2">

@@ -1,17 +1,17 @@
 import { initializeApp } from "firebase/app";
-import { collection, doc, getDoc, getFirestore } from "firebase/firestore";
+import { /* addDoc, */ collection, doc, getDoc, getFirestore } from "firebase/firestore";
 import "firebase/compat/storage";
 
 
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_APIKEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTHDOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECTID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGEBUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGINGSENDERID,
-  appId: process.env.REACT_APP_FIREBASE_APPID 
+  apiKey: "AIzaSyCxlpblRm0oAYt9aZBFw4Xfjm_RWQaQQ6o",
+  authDomain: "emi-pasteleria.firebaseapp.com",
+  projectId: "emi-pasteleria",
+  storageBucket: "emi-pasteleria.appspot.com",
+  messagingSenderId: "1057942862478",
+  appId: "1:1057942862478:web:47bc6c67f7e4cf397267df"
 };
 
 // Initialize Firebase
@@ -27,13 +27,15 @@ const getItemsById = async (id) => {
   return docSnap.data()
 }
 
-/* // Obtener id para la orden de compra
-const addOrder = async (order) => {
+ // Obtener id para la orden de compra
+/*  const addOrder = async (order) => {
   const docSnap = await addDoc(collection(db, "orders"), order)
   return docSnap.id
-} */
+}   */
 
 export {
   db,
-  getItemsById
+  getItemsById,
+/*   addOrder */
+
 }

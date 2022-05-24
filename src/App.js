@@ -6,6 +6,7 @@ import NavBar from './componentes/NavBar/NavBar';
 import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailContainer'
 import Cart from './componentes/Cart/Cart';
 import Hero from './componentes/Hero/Hero';
+import Checkout from './componentes/Checkout/Checkout';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                     <Route path='category/:categoryId' element={<ItemListContainer />} />
                     <Route path='/cart' element={<Cart />} />
                     <Route path='item/:itemId' element={<ItemDetailContainer/>}/>
+                    <Route path='checkout' element={<Checkout />} />
                 </Routes>
                 </BrowserRouter>
         </CartProvider>

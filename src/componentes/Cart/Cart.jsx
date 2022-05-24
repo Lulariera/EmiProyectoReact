@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import { ArrowLeftIcon, TrashIcon} from "@heroicons/react/solid" 
 
 const Cart = () => {
-    const {cartItems, removeItem, cleanCart, cartLenght, getSubtotal, getTotal} = useContext(CartContext)
+    const {cartItems, removeItem, clearCart, cartLenght, getSubtotal, getTotal} = useContext(CartContext)
 
     return (
         <>
@@ -27,8 +27,6 @@ const Cart = () => {
          <div className="mx-6">
          <div className="flex flex-col justify-between w-full lg:max-w-7xl xl:m-auto">
 
-             {/* Título */}
-             <h1 className= " self-center mb-6">Carrito</h1>
 
              {/* Tabla de contenido */}
              <table className="inline-block overflow-x-auto whitespace-nowrap">
@@ -36,9 +34,9 @@ const Cart = () => {
                  {/* Nombre de columnas */}
                  <thead className="h-10 text-center">
                      <tr className="border-gray-200 border-b">
-                         <th className=" text-left pl-4 ">Producto</th>
-                         <th className=" lowercase px-6 lg:px-16 xl:px-32">Precio</th>
-                         <th className= " lowercase px-6 md:px-2 lg:px-8 xl:px-12">Cantidad</th>
+                         <th className="text-left pl-4">Producto</th>
+                         <th className=" px-6 lg:px-16 xl:px-32">Precio</th>
+                         <th className= " px-6 md:px-2 lg:px-8 xl:px-12">Cantidad</th>
                      </tr>
                  </thead>
                   {/* Items en el carrito */}
@@ -61,12 +59,11 @@ const Cart = () => {
                                 ))}
                             </tbody>
              </table>
-             {/* <CartList/> */}
               {/* Detalles del carrito */}
               <div className="flex flex-col md:flex-row justify-between mt-6 mb-3 mx-4">
 
 {/* Vaciar carrito */}
-<button onClick={cleanCart} className=' lowercase flex flex-row items-center self-start mb-4'>
+<button onClick={clearCart} className="lowercase flex flex-row items-center self-start mb-4">
     x vaciar carrito
 </button>
 
@@ -80,7 +77,7 @@ const Cart = () => {
         <p>Total:</p>
         <p>${getTotal()},00</p>
     </div>
-    <Link to='/checkout' className=" focus:outline-none text-white bg-gray-700 focus:ring-transparent w-full text-center py-3 mt-3">Checkout</Link>
+    <Link to='/checkout' className="btn modal-button mt-2">Checkout</Link>
     <Link to='/' className=" flex flex-row items-center mt-2">
         <ArrowLeftIcon className="h-4 w-4 mr-1" />
         seguir comprando

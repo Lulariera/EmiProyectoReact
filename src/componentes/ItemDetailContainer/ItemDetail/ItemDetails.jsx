@@ -47,7 +47,7 @@ const ItemDetail = ({ item }) => {
 						{isInCart ? (
 								<Link
 									to="/cart"
-									className="btn bg-primary text-white  "
+									className="btn modal-button mt-2"
 								>
 									Terminar Compra
 								</Link>

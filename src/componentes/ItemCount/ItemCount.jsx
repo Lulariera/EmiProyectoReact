@@ -3,11 +3,6 @@ import { useState } from 'react'
 // Contador de items en el carrito
 const ItemCount = ({ qty, addToCart }) => {
 
-    // Estilos del contador
-    const styles = {
-        symbol: "focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer text-gray-400 border border-gray-400 w-7 h-7 flex items-center justify-center p-0.5",
-        counter: "border border-x-1 border-x-white border-y-gray-400 text-gray-600 h-full text-center w-6 p-0.5"
-    }
 
     // Use state que permite realizar el conteo
     const [count, setCount] = useState(1)
@@ -35,13 +30,13 @@ const ItemCount = ({ qty, addToCart }) => {
 
                     <div className="flex flex-row">
                         <div className="flex">
-                            <span onClick={minusCount} className={"border-r-0 " + (styles.symbol)}>
+                            <span onClick={minusCount} className="border-r-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer text-gray-400 border border-gray-400 w-7 h-7 flex items-center justify-center p-0.5">
                                 <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4.16602 10H15.8327" stroke="#b7b7b7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                             </span>
-                            <input id="counter" aria-label="input" className={styles.counter} type="text" value={count} onChange={(e) => e.target.value} />
-                            <span onClick={addCount} className={"border-l-0 " + (styles.symbol)}>
+                            <input id="counter" aria-label="input" className="border border-x-1 border-x-white border-y-gray-400 text-gray-600 h-full text-center w-6 p-0.5" type="text" value={count} onChange={(e) => e.target.value} />
+                            <span onClick={addCount} className="border-l-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 cursor-pointer text-gray-400 border border-gray-400 w-7 h-7 flex items-center justify-center p-0.5">
                                 <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10 4.1665V15.8332" stroke="#b7b7b7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     <path d="M4.16602 10H15.8327" stroke="#b7b7b7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />

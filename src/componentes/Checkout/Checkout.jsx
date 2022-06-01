@@ -83,7 +83,7 @@ const Checkout = () => {
                         id="surname" type="text" name="surname" required onChange={handleSubmitChange} placeholder="Apellido" />
                     <input
                         className="px-2 focus:outline-none focus:ring-white focus:border-gray-600 border-b border-gray-200 placeholder-gray-600 py-4 w-full "
-                        id="telephone" type="tel" name="telephone" required onChange={handleSubmitChange} placeholder="Teléfono (insertar como mínimo 7 dígitos)" />
+                        id="telephone" type="tel" name="telephone" required onChange={handleSubmitChange} placeholder="Teléfono (xxxxxxxxx)" />
                     <input
                         className="px-2 focus:outline-none focus:ring-white focus:border-gray-600 border-b border-gray-200 placeholder-gray-600 py-4 w-full "
                         id="email" type="email" name="email" required onChange={handleSubmitChange} placeholder="E-mail" />

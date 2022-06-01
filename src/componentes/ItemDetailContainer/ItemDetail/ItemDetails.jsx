@@ -36,7 +36,7 @@ const ItemDetail = ({ item }) => {
 					<div className="sm:col-span-8 lg:col-span-7">
 					  <h2 className="text-2xl font-extrabold text-pink-500 sm:pr-12">{item.name}</h2>
 		
-					  <section aria-labelledby="information-heading" className="mt-2">
+					  <section className="mt-2">
 						<div className="flex items-center">
 							<a href=" " className="ml-3 text-lg font-medium text-indigo-600 hover:text-indigo-500 mb-3">{item.info}</a>
 						  </div>

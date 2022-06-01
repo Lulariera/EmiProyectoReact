@@ -20,7 +20,7 @@ const Item = ({ item }) => {
                         <div className="mt-4 pb-4">
                             <span className="text-teal-600 text-md font-semibold">{item.details}</span>
                         </div>
-                        <Link to={`/item/${item.id}`} for="my-modal-3" className="btn modal-button mt-2">Ver más</Link>
+                        <Link to={`/item/${item.id}`} htmlFor="my-modal-3" className="btn modal-button mt-2">Ver más</Link>
 
                     </div>
                 </div>

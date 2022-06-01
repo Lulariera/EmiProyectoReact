@@ -37,8 +37,8 @@ EMI es un eCommerce que propone mostrar la delicadeza de las esquisiteces produc
 
 ## Contacto
 
-* **LinkedIn:** https://www.linkedin.com/in/mariaflorenciarecio
-* **GitHub:** https://github.com/mariaflorenciarecio
+* **LinkedIn:** https://www.linkedin.com/in/laura-riera-
+* **GitHub:** https://github.com/lulariera
 
 ## En el directorio del proyecto se debe ingresar en la consola:
 **npm start**

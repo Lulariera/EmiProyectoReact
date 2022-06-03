@@ -51,25 +51,26 @@ const Checkout = () => {
         <>
             {/* Contenedor checkout */}
             {/* Detalle de facturación */}
-            <div className="flex flex-col justify-center items-center w-full mt-6 lg:mt-0 mb-3">
+            <div className="flex justify-center items-center xl:max-w-7xl mx-6 xl:mx-auto">
+                <div className="flex w-full flex-col justify-center items-center">
 
                 {/* Título */}
                 <h1 className=" self-center mb-6">Checkout</h1>
                 {/* Resúmen */}
                 <div className="flex flex-col self-center w-full md:w-1/2 mr-6">
-                    <h2>Resúmen de compra:</h2>
-                    <div className="flex flex-col border bg-gray-200 p-4 mt-6">
+                    <h2 className="p-3 font-semibold">Resúmen de compra:</h2>
+                    <div className="flex flex-col border bg-gray-200 p-4 mt-6 font-light text-sm text-gray-600 tracking-wide leading-normal">
                         <div className="flex flex-row justify-between ">
                             <p>Cantidad de items:</p>
                             <p>{cartLenght()}</p>
                         </div>
-                        <div className="flex flex-row justify-between font-semibold mt-10 ">
+                        <div className="flex flex-row justify-between font-semibold mt-10 text-sm text-gray-600 tracking-wide leading-normal">
                             <p>Total:</p>
                             <p>{(getTotal())}</p>
                         </div>
                     </div>
                     <Link to='/cart' className=" flex flex-row items-center mt-3 lowercase py-9">
-                        <ArrowLeftIcon className="h-4 w-4 mr-1" />Volver al carrito </Link>
+                        <ArrowLeftIcon className="h-4 w-4 mr-1 m-5" />Volver al carrito </Link>
                 </div>
 
                 {/* Formulario */}
@@ -107,6 +108,7 @@ const Checkout = () => {
                             type="submit" value="Proceder al pago" disabled />
                     )
                 }
+            </div>
             </div>
 
             {/* Contenedor modal final */}

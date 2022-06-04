@@ -112,7 +112,7 @@ const Checkout = () => {
             </div>
 
             {/* Contenedor modal final */}
-            <div className={`${showModal ? "flex" : "hidden"} inset-0 fixed w-full h-full bg-pink-200`}>
+            <div className={`${showModal ? "flex" : "hidden"} inset-0 fixed w-full h-full bg-yellow-200`}>
                 <div className="container mx-auto justify-center items-center px-4 md:px-10 py-20 place-self-center">
                     <div className="bg-white px-3 md:px-4 py-12 flex flex-col justify-center items-center">
                         <h2 className="text-center md:w-9/12 lg:w-7/12">¡Muchas gracias por tu compra {(buyer.name).toUpperCase()}!</h2>

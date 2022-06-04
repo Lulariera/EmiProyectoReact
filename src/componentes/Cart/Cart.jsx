@@ -43,9 +43,9 @@ const Cart = () => {
                   <tbody className="w-full text-center">
                                 {cartItems.map((item) => (
                                     <tr key={item.id} className="border-gray-200 border-b">
-                                        <th className="flex flex-row justify-left items-center pr-40 md:pr-0 tracking-wider leading-loose ">
-                                            <img className="p-4 h-60 tracking-wider leading-loose " src={item.url} alt={item.name} />
-                                            <div className="flex flex-col text-left tracking-wider leading-loose ">
+                                        <th className="flex flex-row justify-left items-center pr-40 md:pr-0 ">
+                                            <img className="p-4 h-65" src={item.url} alt={item.name} />
+                                            <div className="flex flex-col text-left">
                                                 <p >{item.name}</p>
                                             </div>
                                         </th>
